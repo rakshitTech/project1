@@ -14,7 +14,7 @@ console.log("port : ",config.get('PORT'));
 console.log(app.get('env'));
 console.log("in app.js");
 
-app.set('port', process.env.PORT || config.get('PORT'));
+//app.set('port', process.env.PORT || config.get('PORT'));
 app.get('/', function(req, res) {
     console.log("get request received");
     res.send("hey there!")
@@ -34,16 +34,16 @@ app.use(function (req, res, next) {
     next();
 });
 
-function startInitialProcess() {
-    console.log('Express server listening on port ' + app.get('port'));
-    // db=''
-    // var MongoClient = require('mongodb').MongoClient;
-    // MongoClient.connect(config.get('databaseSettings.mongo_db_connection'), function (err, database) {
-    //     if (err) throw err;
-    //     db = database;
-    // })
-}
+// function startInitialProcess() {
+//     console.log('Express server listening on port ' + app.get('port'));
+//     // db=''
+//     // var MongoClient = require('mongodb').MongoClient;
+//     // MongoClient.connect(config.get('databaseSettings.mongo_db_connection'), function (err, database) {
+//     //     if (err) throw err;
+//     //     db = database;
+//     // })
+// }
 
-var startServer =  http.createServer(app).listen(app.get('port'), function () {
-    startInitialProcess();
-});
+// var startServer =  http.createServer(app).listen(app.get('port'), function () {
+//     startInitialProcess();
+// });
