@@ -4,10 +4,10 @@
 // config = require('config');
 // process.argv.NODE_APP_INSTANCE = app_instance;
 // require('pmx').init();
-// var express = require('express');
+var express = require('express');
 //
 // var http = require('http');
-// var app = express();
+var app = express();
 //
 // var constants = require('./routes/constants');
 // console.log("port : ",config.get('PORT'));
@@ -15,10 +15,10 @@
 // console.log("in app.js");
 //
 // //app.set('port', process.env.PORT || config.get('PORT'));
-// app.get('/', function(req, res) {
-//     console.log("get request received");
-//     res.send("hey there!")
-// });
+app.get('/', function(req, res) {
+    console.log("get request received");
+    res.send("hey there!")
+});
 //
 // app.use(function (req, res, next) {
 //     // Website you wish to allow to connect
