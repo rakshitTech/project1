@@ -1,0 +1,29 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "async" : "2.1.1",
+    "config" : "1.21.0",
+    "express" : "4.14.0",
+    "http" : "0.0.0",
+    "moment" : "2.15.1",
+    "pmx" : "0.6.8",
+    "request" : "2.75.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakshitTech/project1.git"
+  },
+  "author": "rakshit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakshitTech/project1/issues"
+  },
+  "homepage": "https://github.com/rakshitTech/project1#readme"
+}
