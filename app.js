@@ -11,7 +11,7 @@ var app = express();
 //
 // var constants = require('./routes/constants');
 // console.log("port : ",config.get('PORT'));
-// console.log(app.get('env'));
+console.log(app.get('env'));
 // console.log("in app.js");
 //
 // //app.set('port', process.env.PORT || config.get('PORT'));
@@ -47,8 +47,8 @@ app.use(function (req, res, next) {
 // // var startServer =  http.createServer(app).listen(app.get('port'), function () {
 // //     startInitialProcess();
 // // });
-http.listen((process.env.PORT), function(){
-    console.log('listening on port:');
+app.listen(process.env.PORT, function(){
+    console.log('listening on port:', app.get('port'));
 });
 
 
