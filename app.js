@@ -6,7 +6,7 @@
 // require('pmx').init();
 var express = require('express');
 //
-// var http = require('http');
+var http = require('http');
 var app = express();
 //
 // var constants = require('./routes/constants');
@@ -47,7 +47,9 @@ app.use(function (req, res, next) {
 // // var startServer =  http.createServer(app).listen(app.get('port'), function () {
 // //     startInitialProcess();
 // // });
-
+http.listen((process.env.PORT), function(){
+    console.log('listening on port:');
+});
 
 
 console.log("your app is started rakshit yadav v")
